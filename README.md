@@ -1,4 +1,3 @@
-# homework
 Week1(9/9-9/13)
 ===============
 Week2(9/16-9/20): Designed Linked List
