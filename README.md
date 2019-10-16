@@ -10,7 +10,8 @@ Week3(9/23-9/27): Stack and Queue
 ==================================
 Week4(9/30-10/04): Set, Insertion Sort, Quick Sort
 ===================================================
-* QuickSort homework
+* [QuickSort homework](https://github.com/Nyar8712/homework/blob/master/Week4/QuickSort.ipynb "Title")
+
 Week5(10/07-10/11)
 ==================
 Week6(10/14-10/18):
