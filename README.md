@@ -52,7 +52,7 @@ Week4(9/30-10/04): Set, Insertion Sort, Quick Sort
 ### Quick Sort Partition:
  <br>  ![image](https://github.com/Nyar8712/homework/blob/master/IMG/QuickSort_Partition.jpg)
 
- <br>  * [QuickSort homework](https://github.com/Nyar8712/homework/blob/master/Week4/QuickSort.ipynb "my quick sort homework")
+ *  [QuickSort homework](https://github.com/Nyar8712/homework/blob/master/Week4/QuickSort.ipynb "my quick sort homework")
 
 Week5(10/07-10/11)
 ==================
