@@ -30,13 +30,23 @@ Week4(9/30-10/04): Set, Insertion Sort, Quick Sort
                  =θ(n²)
    3. Average case: 
       我從書上讀到T. Cormen推導平均時間的方式
-    	   令資料值為x1<x2<x3<...<xn，排序過程中任兩項資料xi跟xj(i<j)之比較次數可能是0或1次。在partition時，pivot選到xi~xj之外的值，他們兩個就有機
-         會比較；pivot選到xi~xj之間(xi<pivot<xj)，這兩個就會被分開而不比較；pivot選到xi或xj，他們兩個就會剛好比較一次。因此，任兩資料值互相比較一
-         次的機率是2/(j-i+1)，說明快速排序的比較次數期望值為
+    	   令資料值為x1<x2<x3<...<xn，排序過程中任兩項資料xi跟xj(i<j)之比較次數可能是0或1次。在partition時，pivot選到xi-xj之外的值，他們兩個就有
+      機會比較；pivot選到xi-xj之間(xi<pivot<xj)，這兩個就會被分開而不比較；pivot選到xi或xj，他們兩個就會剛好比較一次。因此，任兩資料值互相比較一
+      次的機率是2/(j-i+1)，說明快速排序的比較次數期望值為
       -      ∑_(i=1)^(n-1)∑_(j=i+1)^n2/(j-i+1)= ∑_(i=1)^(n-1)∑_(k=1)^(n-i)2/(k+1)< ∑_(i=1)^(n-1)∑_(k=1)^n2/k
 					                               = ∑_(i=1)^(n-1)O(logn)
 					                               = O(nlogn)
-      
+   4. 空間複雜度: 
+      -      best case和average case都是O(logn)
+             2*(n/2)+2*(n/4)+2*(n/8)+...+1=n+n/2+n/4+...+1 
+             取log，logn+1/2logn+1/4logn+...+log1=clogn，常數c可被忽略
+             因此額外空間為O(logn)
+             worst case則為O(n)
+             因為都取最大或最小，導致每次比的資料量都只少一筆
+             (n-1)+(n-2)+(n-3)+...+n-k，n-k為1，也就是次數為k=n-1次
+             因此額外空間為O(n)
+   5. 結論: 
+      可以看到，平均時間複雜度僅為線性對數時間，而平均空間也只有O(logn)，比許多排序法如合併排序(merge sort)，插入排序(insertion sort)，氣泡排序  	    (bubble sort)
   * [QuickSort homework](https://github.com/Nyar8712/homework/blob/master/Week4/QuickSort.ipynb "my quick sort homework")
 
 Week5(10/07-10/11)
