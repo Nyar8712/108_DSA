@@ -53,6 +53,8 @@ Week4(9/30-10/04): Set, Insertion Sort, Quick Sort
  <br>  ![image](https://github.com/Nyar8712/homework/blob/master/IMG/QuickSort_Partition.jpg)
 
  *  [QuickSort homework](https://github.com/Nyar8712/homework/blob/master/Week4/QuickSort.ipynb "my quick sort homework")
+ <br> 因github在開啟ipynb檔案常常失敗或時間過長，在上方連結無法看到檔案時可以看以下檔案
+ * 
 
 Week5(10/07-10/11)
 ==================
