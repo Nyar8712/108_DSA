@@ -46,8 +46,8 @@ Week4(9/30-10/04): Set, Insertion Sort, Quick Sort
              (n-1)+(n-2)+(n-3)+...+n-k，n-k為1，也就是次數為k=n-1次
              因此額外空間為O(n)
    5. 結論: 
-      可以看到，平均時間複雜度僅為線性對數時間，比許多排序法如合併排序(merge sort)，插入排序(insertion sort)，氣泡排序(bubble sort)等，都要來的
-      少，而worst case的發生機率非常的低，因此以速度來說可以說是很好的排序法。
+      可以看到，平均時間複雜度僅為線性對數時間，比許多排序法如選擇排序(Selection sort)，插入排序(insertion sort)，氣泡排序(bubble sort)等，都要
+      來的少，而worst case的發生機率非常的低，因此以速度來說可以說是很好的排序法。
       
 ### Quick Sort Partition:
  <br>  ![image](https://github.com/Nyar8712/homework/blob/master/IMG/QuickSort_Partition.jpg)
