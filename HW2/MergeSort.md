@@ -21,11 +21,15 @@ Merge Sort與Quick Sort一樣，皆是採用個別擊破的原理，將資料做
 <br>  ![image](https://github.com/Nyar8712/homework/blob/master/IMG/merge_sort_lessthan2.jpg)
 正式開始作Merge Sort，首先判斷測值的量，如果只有一筆或空的list就根本不需要比，直接原封不動回傳就好。
 
-<br>  ![image](https://github.com/Nyar8712/homework/blob/master/IMG/)
-設一個divide代表測值list長度的一半，取整數，並且將第0筆值到divide(一半)存在left，將divide到最後一筆存在right，同時多建立三個integer變數m，p，q，初值皆為0代表在該list的第0筆，p為left的指向位置，q為right的，m則是存輸出值的list的指向位置。
+<br>  ![image](https://github.com/Nyar8712/homework/blob/master/IMG/merge_sort_partition1.jpg)
+設一個divide代表測值list長度的一半，取整數，並且將第0筆值到divide(一半)存在left，將divide到最後一筆存在right，同時多建立三個integer變數m，p，q，初值皆為0代表在該list的第0筆，p為left的指向位置，q為right的，m則是存輸出值的list的指向位置。這時呼叫自己一次，將left和right也進行一樣的動作去遞迴，直至left和right也成為排序完成的list。
 
 <br>  ![image](https://github.com/Nyar8712/homework/blob/master/IMG/merge_sort_compare.jpg)
 p < left的長度意味著當left的每個位置跑完前都會繼續執行，q亦如是。當left的第p項(從0開始)"小於"right的第q項(從0開始)時，將left的第p項輸出到nums的第m項，這時p+1指向下一位置，m+1指向下一位置，反之若是"大於"，則是輸出right的第q項，然後q+1指向下一位置。以上步驟持續至left或right的值都輸出完畢為止，此時輸出完的群的位置指向一定在最後一個。
 
 <br>  ![image](https://github.com/Nyar8712/homework/blob/master/IMG/merge_sort_remain.jpg)
-接續上述，這時假若left還未輸出完畢，也就是說p還小於left的長度，就將值輸出，p+1，m+1，right的部分也是同樣道理，直至所有直都完成後
+接續上述，這時假若left還未輸出完畢，也就是說p還小於left的長度，就將值輸出，p+1，m+1，right的部分也是同樣道理，直至所有值都完成後，nums就會成為一個新的以排序完成list，因此最後回傳nums就會呈現排序完成的list了。
+
+## 流程圖
+
+<br>  ![image]()
