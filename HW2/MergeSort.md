@@ -21,7 +21,7 @@ Merge Sort與Quick Sort一樣，皆是採用個別擊破的原理，將資料做
 <br>  ![image](https://github.com/Nyar8712/homework/blob/master/IMG/merge_sort_lessthan2.jpg)
 正式開始作Merge Sort，首先判斷測值的量，如果只有一筆或空的list就根本不需要比，直接原封不動回傳就好。
 
-<br>  ![image](https://github.com/Nyar8712/homework/blob/master/IMG/merge_sort_partition.jpg)
+<br>  ![image](https://github.com/Nyar8712/homework/blob/master/IMG/)
 設一個divide代表測值list長度的一半，取整數，並且將第0筆值到divide(一半)存在left，將divide到最後一筆存在right，同時多建立三個integer變數m，p，q，初值皆為0代表在該list的第0筆，p為left的指向位置，q為right的，m則是存輸出值的list的指向位置。
 
 <br>  ![image](https://github.com/Nyar8712/homework/blob/master/IMG/merge_sort_compare.jpg)
