@@ -32,4 +32,4 @@ p < left的長度意味著當left的每個位置跑完前都會繼續執行，q�
 
 ## 流程圖
 
-<br>  ![image]()
+<br>  ![image](https://github.com/Nyar8712/homework/blob/master/IMG/Merge_sort.jpg)
