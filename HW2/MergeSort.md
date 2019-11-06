@@ -8,5 +8,7 @@ Merge Sort與Quick Sort一樣，皆是採用個別擊破的原理，將資料做
   3. 兩群組成一群，然後群內進行比較並排序，這時就會得到若干兩個一群的排序完畢群。
   4. 重複進行 iii，不斷把兩群合併回來並進行排序，最後就會得到一個全部排序完成的大群，此大群也就會是排序完的資料值。
 我在用程式呈現慢慢的不斷分不斷分再合回來的方式上碰到了點瓶頸，於是我從書上看到可以用遞迴來進行實現
-<br>  ![image]()
+<br>  ![image](https://github.com/Nyar8712/homework/blob/master/IMG/merge_sort_recursive.jpg)
+花了將近20多分鐘去理解，我認知到遞迴的方式是靠著pointer來協助進行，首先分成兩群後，在兩群都建立一個pointer指向第0項
+
 https://www.educative.io/edpresso/merge-sort-in-python
