@@ -15,27 +15,30 @@ class Solution(object):
         if len(nums) <= 1:
             return nums
         divide = len(nums) // 2
-        small = nums[:divide]
-        large = nums[divide:]
+        left = nums[:divide]
+        right = nums[divide:]
+        
+        merge_sort(left)
+        merge_sort(right)
         
         m, p, q = 0, 0, 0
         
-        while p < len(small) and q < len(large):
-            if small[p] < large[q]:
-                nums[m] = small[p]
+        while p < len(left) and q < len(right):
+            if left[p] < right[q]:
+                nums[m] = left[p]
                 p = p+1
             else:
-                nums[m] = large[q]
+                nums[m] = right[q]
                 q = q+1
             m = m+1
 
-        while p < len(small):
-            nums[m] = small[p]
+        while p < len(left):
+            nums[m] = left[p]
             p = p+1
             m = m+1
 
-        while q < len(large):
-            nums[m]=large[q]
+        while q < len(right):
+            nums[m]=right[q]
             q = q+1
             m = m+1
         return nums
