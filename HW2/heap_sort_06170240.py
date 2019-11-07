@@ -6,6 +6,8 @@
 
 class Solution(object):
     def heap_sort(self, nums):
+        if len(nums) <= 1:
+            return nums
         self.nums = nums
         Solution().build_max_heap(nums)
         for i in range(len(nums) - 1, 0, -1):
