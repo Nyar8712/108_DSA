@@ -18,8 +18,8 @@ class Solution(object):
         left = nums[:divide]
         right = nums[divide:]
         
-        merge_sort(left)
-        merge_sort(right)
+        Solution().merge_sort(left)
+        Solution().merge_sort(right)
         
         m, p, q = 0, 0, 0
         
