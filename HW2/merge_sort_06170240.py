@@ -26,21 +26,21 @@ class Solution(object):
         while p < len(left) and q < len(right):
             if left[p] < right[q]:
                 nums[m] = left[p]
-                p = p+1
+                p+= 1
             else:
                 nums[m] = right[q]
-                q = q+1
-            m = m+1
+                q+= 1
+            m+= 1
 
         while p < len(left):
             nums[m] = left[p]
-            p = p+1
-            m = m+1
+            p+= 1
+            m+= 1
 
         while q < len(right):
             nums[m]=right[q]
-            q = q+1
-            m = m+1
+            q+= 1
+            m+= 1
         return nums
 
 
