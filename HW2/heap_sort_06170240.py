@@ -15,13 +15,13 @@ class Solution(object):
             Solution().heapify(nums, 0, i)
         return nums
     
-    def parent(i):
+    def parent(self, i):
         return (i - 1) // 2
  
-    def left(i):
+    def left(self, i):
         return 2*i + 1
      
-    def right(i):
+    def right(self, i):
         return 2*i + 2
  
     def build_max_heap(self, nums):
@@ -31,8 +31,8 @@ class Solution(object):
             a -= 1
     
     def heapify(self, nums, i, n):
-        l = left(i)
-        r = right(i)
+        l = Solution().left(i)
+        r = Solution().right(i)
         if (l < n and nums[l] > nums[i]):
             largest = l
         else:
