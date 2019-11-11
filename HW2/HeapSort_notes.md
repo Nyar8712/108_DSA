@@ -28,10 +28,10 @@ Heap Sort排序的方式主要是透過建立一個堆積(為一完全二元樹)
 <br>  ![image](https://github.com/Nyar8712/homework/blob/master/IMG/heap_sort_sortcall.jpg)
 正式開始實作，首先資料值如果僅有1筆或0筆就直接丟出去就好。這個是Heap Sort的執行部分，可以看到進行呼叫build_max_heap函式，這個函式是用來不斷維護最大堆積的，呼叫後便會使資料值成為最大堆積，再來就是第一步，把樹根和最後一片樹葉做交換，接下來檢查堆積內，有沒有任何節點違反最大堆積，有的話便呼叫heapify函式來進行排序調整，其位置會從0開始。再來就反覆執行到堆積資料都空了，整個串列就排完了，此時便回傳以排序完之資料。到這可能有些突兀，詳細函式部份且待下方分曉。
 
-<br>  ![image](https://github.com/Nyar8712/homework/blob/master/IMG/heap_sort_build_max_heap.jpg)
+<br>  ![image](https://github.com/Nyar8712/homework/blob/master/IMG/heap_sort_buildMaxHeap.jpg)
 如同前面觀念部分定義的父節點，左子樹以及右子樹，在此用函式定義好當前位置，並回傳其左右子樹的位置點，以及父節點的位置，接著便要來說明剛剛提及的build_max_heap函式了。首先指定一個變數存放父節點位置資訊，當其還不到0，就會呼叫heapify函式以進行調整，直至全部調整完到位置到樹根，此時堆積便已維護完畢成一最大堆積。
 
-<br>  ![image](https://github.com/Nyar8712/homework/blob/master/IMG/heap_sort_heapify.jpg)
+<br>  ![image](https://github.com/Nyar8712/homework/blob/master/IMG/heap_sort_doHeapify.jpg)
 建立heapify函式，判定其左子樹所在位置如果當前節點位置，則將其設為最大值，反之則為當前節點，而若右子樹大於最大值則右子樹為最大值，持續進行下去，會找到最終的最大值，這時若其不是當前節點，則將當前節點與最大值交換，並呼叫自身函式重複進行。
 
 ## 流程圖
