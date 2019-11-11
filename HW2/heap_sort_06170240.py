@@ -25,7 +25,7 @@ class Solution(object):
         return 2*i + 2
  
     def build_max_heap(self, nums):
-        a = parent(len(nums) - 1)
+        a = Solution().parent(len(nums) - 1)
         while a >= 0:
             Solution().heapify(nums, a, len(nums))
             a -= 1
