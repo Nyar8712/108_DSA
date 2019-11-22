@@ -58,3 +58,17 @@
 
 <br>  ![image](https://github.com/Nyar8712/homework/blob/master/IMG/bst.jpg)
     
+
+## 參照來源
+
+我主要參考以下三個影片來進行設計：
+
+https://www.youtube.com/watch?v=Zaf8EOVa72I
+
+https://www.youtube.com/watch?v=f5dU3xoE6ms
+
+https://www.youtube.com/watch?v=YlgPi75hIBc&t=
+
+本次作業以及學習歷程部分，巨資三B(06170225)陳昱昇教導了我非常多，從最一開始BST邏輯卡住都是問他來開通大腦理解，到後來自己程式碼的邏輯不正確也是他替我解答，幫助我認知問題在何處，並解決錯誤，因此本次作業真要說，一定有部分的邏輯和想法是參考詢問他的想法，在此附上他的github網址。
+
+https://github.com/samuel871211/My-python-code
