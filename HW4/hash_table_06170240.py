@@ -70,3 +70,5 @@ class MyHashSet:
 # Hash_Table.remove("pig")
 # outcome = Hash_Table.contains("pig")
 # print(outcome)
+
+# ref. http://alrightchiu.github.io/SecondRound/hash-tablechaining.html 雖然不會C++但是對理解和設計上有極大助益。
