@@ -49,4 +49,6 @@ https://alrightchiu.github.io/SecondRound/hash-tablechaining.html
 
 https://ithelp.ithome.com.tw/articles/10208884
 
+http://alrightchiu.github.io/SecondRound/hash-tablechaining.html
+
 本次作業我也跟上次一樣，與06170238賴祐全及06170243李騏宏一起討論如何進行和撰寫，關於概念部分是透過老師上課講解和影片來理解，程式邏輯部份兩位同學幫了很大的忙，不然我某些部份如contains還要卡死更久。
