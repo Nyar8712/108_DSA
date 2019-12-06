@@ -72,3 +72,8 @@ class MyHashSet:
 # print(outcome)
 
 # ref. http://alrightchiu.github.io/SecondRound/hash-tablechaining.html 雖然不會C++但是對理解和設計上有極大助益。
+#      https://www.youtube.com/watch?v=O4dGJZ4J0Bk
+#      http://alrightchiu.github.io/SecondRound/hash-tableintrojian-jie.html#dm
+#      https://alrightchiu.github.io/SecondRound/hash-tablechaining.html
+#      https://ithelp.ithome.com.tw/articles/10208884
+#      http://alrightchiu.github.io/SecondRound/hash-tablechaining.html
