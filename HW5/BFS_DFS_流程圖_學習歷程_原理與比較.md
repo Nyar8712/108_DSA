@@ -66,3 +66,19 @@
 由於兩者追蹤特性，BFS追蹤出的樹圖路線會是寬並且單一路徑皆比較短，DFS則會追蹤出狹窄但單一路徑較深的圖形結構。因此當問題圖形是比較狹長的樹時適合用DFS，反之寬但短的則適合用BFS。
 
 兩者在空間複雜度上有較大的不同，BFS必須將每個節點都存在記憶體空間，DFS花費線性空間是因為必須要存下帶有未走訪節點的單一路徑。在最壞情況下如值得量非常大，BFS存取佇列上每個節點就非常占據記憶體空間，但DFS只存取路徑長度的空間，而這通常比節點數小很多，因此BFS對空間的使用較為低效，DFS則較為高效。
+
+## 參考資料
+
+我參考了以下網址來幫助我進行邏輯思考：
+
+https://www.geeksforgeeks.org/depth-first-search-or-dfs-for-a-graph/
+
+https://www.geeksforgeeks.org/breadth-first-search-or-bfs-for-a-graph/
+
+https://www.itread01.com/content/1544006352.html
+
+https://techdifferences.com/difference-between-bfs-and-dfs.html
+
+https://stackoverflow.com/questions/46383493/python-implement-breadth-first-search/46383689
+
+本次作業原本我認為已完成時，被巨資三B陳昱昇同學指出程式碼中的關鍵錯誤，因此得以及時修改完畢，要不是有他指出致命問題所在真的要炸了。
