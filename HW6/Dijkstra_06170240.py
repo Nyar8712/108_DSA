@@ -155,3 +155,39 @@ class Graph():
             
         ans = zip(lesstotal,wei)
         return dict(ans)
+
+#
+g = Graph(9)
+g.graph=[[0,4,0,0,0,0,0,8,0],
+        [4,0,8,0,0,0,0,11,0],
+        [0,8,0,7,0,4,0,0,2],
+        [0,0,7,0,9,14,0,0,0],
+        [0,0,0,9,0,10,0,0,0],
+        [0,0,4,14,10,0,2,0,0],
+        [0,0,0,0,0,2,0,1,6],
+        [8,11,0,0,0,0,1,0,7],
+        [0,0,2,0,0,0,6,7,0]]
+print("Dijkstra:", g.Dijkstra(0))
+
+#
+g = Graph(4)
+g.addEdge(0,1,10)
+g.addEdge(0,2,6)
+g.addEdge(0,3,5)
+g.addEdge(1,3,15)
+g.addEdge(2,3,4)
+print("Kruskal:", g.Kruskal())
+
+'''
+參考來源:
+https://github.com/yang-yoa-ying/06170104/blob/master/HW6/Dijkstra_06170104.py
+https://www.lfhacks.com/tech/python-list-element-replace
+https://thispointer.com/python-how-to-convert-a-list-to-dictionary/
+https://www.runoob.com/python3/python3-set.html
+https://ithelp.ithome.com.tw/articles/10209593
+https://www.geeksforgeeks.org/python-program-for-dijkstras-shortest-path-algorithm-greedy-algo-7/
+https://www.geeksforgeeks.org/kruskals-minimum-spanning-tree-algorithm-greedy-algo-2/
+http://alrightchiu.github.io/SecondRound/single-source-shortest-pathdijkstras-algorithm.html
+http://alrightchiu.github.io/SecondRound/minimum-spanning-treekruskals-algorithm.html
+http://www.csie.ntnu.edu.tw/~u91029/SpanningTree.html
+'''
