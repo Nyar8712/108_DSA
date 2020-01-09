@@ -1,4 +1,4 @@
-# 本周作業：合併排序(Merge Sort)與堆積排序(Heap Sort)
+# 本次作業：合併排序(Merge Sort)與堆積排序(Heap Sort)
 本次作業比較考驗概念的理解，畢竟第一次作業難度較低，老師也說了要提升作業難度，以及助教開始確立格式規範。
 ## 作業程式碼
 [merge sort](https://github.com/Nyar8712/homework/blob/master/HW2/merge_sort_06170240.py)
