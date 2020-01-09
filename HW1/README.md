@@ -1,4 +1,4 @@
-# Week1 本周作業：快速排序(Quick Sort)
+# 本次作業：快速排序(Quick Sort)
 第一次作業格式尚未統一，且並未交代完善，整理上較為雜亂無章，還請見諒。
 ## 作業程式碼
 [quick sort](https://github.com/Nyar8712/homework/blob/master/HW1/quick_sort_06170240.py)
