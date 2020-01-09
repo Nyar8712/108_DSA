@@ -1,6 +1,6 @@
 # Week1 本周作業：快速排序(Quick Sort)
 ## 作業程式碼
-<br>  [quick sort](https://github.com/Nyar8712/homework/blob/master/HW1/quick_sort_06170240.py)
+[quick sort](https://github.com/Nyar8712/homework/blob/master/HW1/quick_sort_06170240.py)
 
 ## 學習歷程，流程圖
 <br>  [學習歷程](https://github.com/Nyar8712/homework/blob/master/HW1/quick_sort_%E5%AD%B8%E7%BF%92%E6%AD%B7%E7%A8%8B_%E5%8E%9F%E7%90%86.ipynb)
