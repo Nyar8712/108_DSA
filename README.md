@@ -36,16 +36,66 @@ HW1: [快速排序(Quick Sort)](https://github.com/Nyar8712/homework/tree/master
 
 自我課後練習: [Codesignal題目](https://github.com/Nyar8712/homework/tree/master/Codesignal)
 
-Week1(9/9-9/15)
+Week1(9/9-9/15): 課程介紹
 ===============
-Week2(9/16-9/22): Designed Linked List
+講解上課方式以及計分方式。
+
+從此開始，練習codesignal和leetcode的題目讓自己醒來，因在接下來的課程中不可能從基礎手把手教，因此透過刷題讓自己之前的所學趕快回神。
+
+Codesignal以及Leetcode的連結在上方。
+
+Week2(9/16-9/22): 鏈結串列(Linked List)
 =======================================
-Week3(9/23-9/29): Stack and Queue
+linked list是一種資料儲存結構，透過一個array作為索引，並用一個指標接在後方，以此不斷接續，最後一個則接地(null)。每個node都帶有儲存的資料，以及一個link作為指向的指標。
+
+鏈結串列與陣列的比較:
+
+    1. 單一節點占用
+       array僅需儲存資料，因此較少，而linked list由於需儲存資料以及指標，因此較大
+    2. 整體記憶體使用率
+       array由於建立時必須先給定整體大小，因此在無法確定資料量的情形下，預估錯誤導致資料過大爆掉或是過少導致浪費太多，因此整體空間利用率較低。
+       linked list則只需要透過指標來做新增，不需要一個非常大的初始大小，需要就加不需要就刪，所以整體空間利用率較高，浪費較少。但有overhead所以每配一次節點都需呼叫一次。
+    3. 新增與刪除
+       array比較費時，每加或刪一筆都須檢視整個陣列來確認，需O(n)。
+       linked list較為簡單，只須根據索引和指標來加或刪，費時O(1)。
+    4. 串列合併和分解
+       array需要完整檢視兩方的資料，需費時O(n)。
+       linked list只需要將兩串列欲合併或分解部分的link接上或分開就好，費時O(1)。
+    5. 循序存取及隨機存取
+       array透過位址計算來存取，因此速度較快，O(1)。
+       linked list在循序存取時要透過記憶體讀取鏈結欄位，才能到下一個節點，因此較為費時，而隨機存取時需透過串列開頭循序搜尋，費時O(n)。
+       
+本周練習: 
+<br>  [Design Linked list](https://github.com/Nyar8712/homework/blob/master/Leetcode/707%23_Design%20Linked%20List_06170240.py)
+       
+Week3(9/23-9/29): 堆疊(Stack) && 佇列(Queue)
 ==================================
-Week4(9/30-10/06): Set, Insertion Sort, Quick Sort
-===================================================
-Week5(10/07-10/13)
+stack是一種有序串列的資料結構，其新增和刪除都在同一端進行，該端稱之為top，而另一端稱之為bottom。堆疊採用後進先出(LIFO, Last-in-First-out)的方式，在需要從堆疊中取出資料(pop up)時，會從最後新增(push down)的資料開始進行。
+
+queue是一種有序的線性串列，新增和刪除在兩不同端，新增端稱之為後端(rear/tail)，刪除端則是前端(front/head)。佇列採用先進先出(FIFO, First-in-First-out)的方式，在需要從佇列中取出資料(dequeue)時，會從最初新增(enqueue)的資料開始進行。
+
+佇列有1. Deque(Double-Ended-Queue), 2. Input-Restricted Deque, 3. Output-Restricted Deque三個變化，1者為兩端皆可以作為新增或刪除端的有序串列，2者為兩端皆可做為刪除端，但新增只能由固定一端進行，3者為兩端皆可做為新增端，但刪除只能由固定一端進行的有序串列。
+
+本周練習: 
+<br>  [Min Stack](https://github.com/Nyar8712/homework/blob/master/Leetcode/155%23_Min%20Stack_06170240.py)
+<br>  [Implement Queue using Stacks](https://github.com/Nyar8712/homework/blob/master/Leetcode/232%23_Implement%20Queue%20using%20Stacks_06170240.py)
+
+Week4(9/30-10/06): 集合(Set) && 新增排序(Insertion Sort)
 ==================
+set是一個無序的資料型態，內部的資料值不重複，可以進行重複數據刪除，也可計算交集，聯集，差集等。set裡面的資料必須可以進行疊代。
+
+Insertion Sort的原理非常單純，即是將資料一筆一筆逐一照順序的新增到以排序完成的序列中。
+![image](https://github.com/Nyar8712/homework/blob/master/IMG/insertion.jpg)
+
+如上圖所示，依序將值新增並進行排序，最後變完成該資料的排序。
+
+本周練習: 
+<br>  [Set Mismatch](https://github.com/Nyar8712/homework/blob/master/Leetcode/645%23_Set%20Mismatch_06170240.py)
+
+Week5(10/07-10/13): 雙十國慶周
+==================
+國慶日所以停課了這樣，先開始預習下次要寫的作業！
+
 Week6(10/14-10/20):
 ===================
 Week7(10/21-10/27):
