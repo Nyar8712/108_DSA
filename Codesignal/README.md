@@ -1,5 +1,7 @@
 # Codesignal題目練習
 
+和同學一起解題目，遇上困難時一起討論，其實大多數時間碰上的都是題目語意理解和目的理解的問題。
+
 ## Intro
 [1#_add](https://github.com/Nyar8712/homework/blob/master/Codesignal/Intro/1%23_add_06170240.java)
 <br>  [2#_CenturyFromYear](https://github.com/Nyar8712/homework/blob/master/Codesignal/Intro/2%23_CenturyFromYear_06170240.java)
